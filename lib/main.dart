@@ -1,4 +1,4 @@
-
+//jbngfii
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/shared/components/constants.dart';
@@ -51,7 +51,6 @@ class MyApp extends StatelessWidget {
               fromShared: isDark,
             ),
         ),
-
       ],
       child: BlocConsumer<AppCubit, AppStates>(
         listener: (context, state) {},
@@ -60,9 +59,10 @@ class MyApp extends StatelessWidget {
               debugShowCheckedModeBanner: false,
               theme: lightTheme,
               darkTheme: darkTheme,
-              themeMode: AppCubit.get(context).isDark ? ThemeMode.dark : ThemeMode.light,
-              home:NewsLayout()
-          );
+              themeMode: AppCubit.get(context).isDark
+                  ? ThemeMode.dark
+                  : ThemeMode.light,
+              home: NewsLayout());
         },
       ),
     );
