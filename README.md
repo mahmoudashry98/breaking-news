@@ -1,4 +1,4 @@
-# news_app
+# News_app
  
 # Getting Started
 
